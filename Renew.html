@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verlengen</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/renew.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header class="container-fluid">
+    <div class="row align-items-center m-0 mb-2">
+        <div class="col p-0">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Phones.html">Telefoons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Simonly.html">Sim-Only</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Verlengen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Business.html">Zakelijk</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="col p-0 d-flex flex-row align-items-center justify-content-end">
+            <ul class="navbar-nav d-flex flex-row align-items-center">
+                <li>
+                    <h3 class="m-1" href="#">TellYourPhone</h3>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" alt="Logo" class="logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<Main class="container">
+    <h1 class="text-center">Verleng Uw Abbonement</h1>
+    <form>
+        <div class="form-group mt-2">
+            <label for="name">Voor- Achternaam</label>
+            <input type="text" class="form-control" id="name" placeholder="Voer uw volledige naam in">
+        </div>
+        <div class="form-group mt-2">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Voer uw email in">
+        </div>
+        <div class="form-group mt-2">
+            <label for="phone">Telefoon nummer</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Voer het telefoon nummer in dat u wilt verlengen">
+        </div>
+        <div class="form-group mt-2">
+            <label for="plan">Kies een Plan</label>
+            <select class="form-control" id="plan">
+                <option>Basic Plan</option>
+                <option>Pro Plan</option>
+                <option>Ultimate Plan</option>
+            </select>
+        </div>
+        <button type="submit" class="btn mt-2" id="submit">Verstuur</button>
+    </form>
+</Main>
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Neem contact op</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">Naam</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="Uw naam">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">Email adres</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="naam@voorbeeld.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Bericht</label>
+                        <textarea class="form-control" id="contactMessage" rows="3"></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn">Verstuur</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <span class="text">&copy; 2023 TellYourPhone. All rights reserved.</span>
+        <div class="float-right">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#" data-bs-toggle="modal"
+                                                                                   data-bs-target="#contactModal">Contact</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
